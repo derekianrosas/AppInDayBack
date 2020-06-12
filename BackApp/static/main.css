@@ -11,12 +11,33 @@
     font-size: 20px;
     cursor: pointer;
     color: #cccccc;
-    border: 4px dashed #009578;
+    border: 4px dashed grey;
     border-radius: 10px;
   }
+
+  h1 {
+    max-width: 220px;
+    padding: 24px;
+    font-size: 15px;
+  }
   
+  img:focus {
+    max-width: 220px;
+    height: 220px;
+    padding: 24px;
+    
+  }
+
+  img {
+    max-width: 220px;
+    height: 220px;
+    padding: 24px;
+    
+  }
+
   .drop-zone--over {
     border-style: solid;
+    border-color: black;
   }
   
   .drop-zone__input {
@@ -45,4 +66,4 @@
     font-size: 14px;
     text-align: center;
   }
-  
+ 
