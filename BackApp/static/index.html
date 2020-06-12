@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    <title>DevCamp React Starter</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>File Sharing App</title>
 
-  <body>
-    <div class="app-wrapper"></div>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-    <div class="file-list-container">
-      <div class="file-list-items"></div>
+<body>
+  <div class="app-wrapper">
+    <div class="upload-wrapper">
+      <h1>Upload new File</h1>
+      <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+      </form>
     </div>
-  </body>
-  <script>
-    const fileContainer = document.querySelector(".file-list-container");
-    const fileContainerItems = document.querySelector(".file-list-items");
-    function listFiller() {
-      fileContainer.addEventListener("click", (event) => {});
-    }
-  </script>
+
+    <div class="drag-a-file-wrapper">
+      <div class="button-wrapper">
+        <button>Drag files Here</button>
+      </div>
+    </div>
+    <div class="files-uploaded-wrapper">
+      <h3>Files Uploaded</h3>
+      <div class="clickable-links-wrapper">
+
+      </div>
+    </div>
+  </div>
+</body>
 </html>
