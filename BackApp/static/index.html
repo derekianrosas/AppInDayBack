@@ -1,15 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <title>DevCamp React Starter</title>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <title>DevCamp React Starter</title>
+  </head>
 
-<body>
-  <div class="app-wrapper"></div>
-</body>
+  <body>
+    <div class="app-wrapper"></div>
 
+    <div class="file-list-container">
+      <div class="file-list-items"></div>
+    </div>
+  </body>
+  <script>
+    const fileContainer = document.querySelector(".file-list-container");
+    const fileContainerItems = document.querySelector(".file-list-items");
+    function listFiller() {
+      fileContainer.addEventListener("click", (event) => {});
+    }
+  </script>
 </html>
