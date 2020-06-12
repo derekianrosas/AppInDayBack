@@ -1,15 +1,17 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+
 <head>
+  <title>Drag and Drop File Upload</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <title>DevCamp React Starter</title>
+  <link rel="stylesheet" href="static/main.css">
 </head>
 
 <body>
-  <div class="app-wrapper"></div>
-</body>
+  <div class="drop-zone">
+    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+    <input type="file" name="myFile" class="drop-zone__input">
+  </div>
 
-</html>
+  <script src="static/main.js"></script>
+</body>
