@@ -9,10 +9,85 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
+<style>
 
+.app-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.app-wrapper > .popup-submit-form {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  width: 500px;
+  height: 400px;
+  border-color: lightgrey;
+  font-family: 'Montserrat', sans-serif;
+} 
+
+.app-wrapper > .popup-submit-form > .submit-files {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgrey;
+  font-size: 15px;
+  color: lightslategrey;
+}
+
+.app.wrapper > .popup-submit-form > .submit-files > .files-to-submit {
+  display: flex;
+  flex-direction: row;
+  background-color:whitesmoke;
+  border-width: medium;
+  border-color: darkslategrey;
+}
+
+.app-wrapper > .popup-submit-form > .submit-button {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  padding: 10px;
+  background-color: lightgrey;
+}
+
+.app-wrapper > .popup-submit-form > .submit-button > #submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 8px;
+  font-weight: 200;
+  color: darkslategrey;
+  background-color: whitesmoke;
+}
+  
+
+
+
+</style>
 <body>
   <div class="app-wrapper">
-    <div class="upload-wrapper">
+
+    <div class="popup-submit-form">
+      
+      <div class="submit-files">
+        <h1>Submit Files</h1>
+      </div>
+      <div class="files-to-submit">
+        <p>Files</p>
+      </div>
+      
+      <div class="submit-button">
+        <button id="submit" onclick="submitForm()">Submit</button>
+      </div>  
+    
+    </div>
+
+</div>
+  <div class="upload-wrapper">
       <h1>Upload new File</h1>
       <form method=post enctype=multipart/form-data>
         <input type=file name=file>
@@ -33,4 +108,8 @@
     </div>
   </div>
 </body>
+
+<script>
+
+</script>
 </html>
