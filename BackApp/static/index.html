@@ -11,18 +11,18 @@
 </head>
 <style>
 
-.app-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 .app-wrapper > .popup-submit-form {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
   width: 500px;
   height: 400px;
-  border-color: lightgrey;
   font-family: 'Montserrat', sans-serif;
-} 
+  padding: 0px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 5px;
+  border-radius: 5px;
+}
 
 .app-wrapper > .popup-submit-form > .submit-files {
   display: flex;
@@ -39,7 +39,8 @@
   flex-direction: row;
   background-color:whitesmoke;
   border-width: medium;
-  border-color: darkslategrey;
+  border-style: solid;
+  
 }
 
 .app-wrapper > .popup-submit-form > .submit-button {
@@ -50,7 +51,7 @@
   background-color: lightgrey;
 }
 
-.app-wrapper > .popup-submit-form > .submit-button > #submit {
+.app-wrapper > .popup-submit-form > .submit-button > .submit {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,9 +62,26 @@
   border-radius: 8px;
   font-weight: 200;
   color: darkslategrey;
-  background-color: whitesmoke;
-}
-  
+  background-color: #13a5d16e;
+  border: none;
+  color: darkslategrey;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;      
+  font-size: 16px;      
+  margin: 4px 2px;      
+  cursor: pointer;      
+  border-radius: 5px;     
+  }      
+        
+  .app-wrapper > .popup-submit-form > .submit-button > .submit:hover {
+      background-color: rgba(96, 160, 36, 0.404);
+}      
+.app-wrapper > .popup-submit-form > .submit-button > .submit:focus {
+        background-color: rgb(18, 190, 133);       
+}        
+
 
 
 
@@ -81,13 +99,16 @@
       </div>
       
       <div class="submit-button">
-        <button id="submit" onclick="submitForm()">Submit</button>
+        <button class="submit">Submit</button>
       </div>  
     
     </div>
 
 </div>
-  <div class="upload-wrapper">
+  
+
+
+<div class="upload-wrapper">
       <h1>Upload new File</h1>
       <form method=post enctype=multipart/form-data>
         <input type=file name=file>
