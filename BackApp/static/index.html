@@ -8,10 +8,107 @@
   <title>File Sharing App</title>
 
   <link rel="stylesheet" href="styles.css">
-</head>
+<style>
+
+.app-wrapper > .popup-submit-form {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  width: 500px;
+  height: 400px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 5px;
+  border-radius: 5px;
+}
+
+.app-wrapper > .popup-submit-form > .submit-files {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgrey;
+  font-size: 15px;
+  color: lightslategrey;
+}
+
+.app.wrapper > .popup-submit-form > .submit-files > .files-to-submit {
+  display: flex;
+  flex-direction: row;
+  background-color:whitesmoke;
+  border-width: medium;
+  border-style: solid;
+  
+}
+
+.app-wrapper > .popup-submit-form > .submit-button {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  padding: 10px;
+  background-color: lightgrey;
+}
+
+.app-wrapper > .popup-submit-form > .submit-button > .submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 8px;
+  font-weight: 200;
+  color: darkslategrey;
+  background-color: #13a5d16e;
+  border: none;
+  color: darkslategrey;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;      
+  font-size: 16px;      
+  margin: 4px 2px;      
+  cursor: pointer;      
+  border-radius: 5px;     
+  }      
+        
+  .app-wrapper > .popup-submit-form > .submit-button > .submit:hover {
+      background-color: rgba(96, 160, 36, 0.404);
+}      
+.app-wrapper > .popup-submit-form > .submit-button > .submit:focus {
+        background-color: rgb(18, 190, 133);       
+}        
+
+
+
+
+</style>
+  </head>
 <body>
   <div class="app-wrapper">
-    <div class="upload-wrapper">
+
+    <div class="popup-submit-form">
+      
+      <div class="submit-files">
+        <h1>Submit Files</h1>
+      </div>
+      <div class="files-to-submit">
+        <p>Files</p>
+      </div>
+      
+      <div class="submit-button">
+        <button class="submit">Submit</button>
+      </div>  
+    
+    </div>
+
+</div>
+  
+
+
+<div class="upload-wrapper">
       <h1>Upload new File</h1>
       <div class="input-wrapper">
         <form method=post enctype=multipart/form-data>
