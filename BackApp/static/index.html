@@ -8,7 +8,6 @@
   <title>File Sharing App</title>
 
   <link rel="stylesheet" href="styles.css">
-</head>
 <style>
 
 .app-wrapper > .popup-submit-form {
@@ -86,6 +85,7 @@
 
 
 </style>
+  </head>
 <body>
   <div class="app-wrapper">
 
@@ -110,10 +110,11 @@
 
 <div class="upload-wrapper">
       <h1>Upload new File</h1>
-      <form method=post enctype=multipart/form-data>
+      <div class="input-wrapper">
+        <form method=post enctype=multipart/form-data>
         <input type=file name=file>
-        <input type=submit value=Upload>
-      </form>
+        <input type=submit value=Upload class="submit">
+      </form></div>
     </div>
 
     <div class="drag-a-file-wrapper">
@@ -128,9 +129,13 @@
       </div>
     </div>
   </div>
+
+</div>
 </body>
 
 <script>
 
 </script>
 </html>
+
+

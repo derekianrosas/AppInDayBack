@@ -14,6 +14,37 @@ body {
     margin: 30px;
     padding: 10px;
     border: 1px solid black;
+    font-family: 'Monserrat', sans-serif;
+    background-color: lightgray;
+}
+
+.upload-wrapper > h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: lightslategray;
+}
+
+.upload-wrapper > .input-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    border: 1px solid darkslategray;
+}
+
+.upload-wrapper > .input-wrapper > .submit > button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    font-weight: 200;
+    color: darkslategray;
+    background-color: whitesmoke;
 }
 
 .drag-a-file-wrapper {
@@ -44,3 +75,7 @@ body {
     height: 30px;
     padding: 10px;
 }
+
+
+
+
