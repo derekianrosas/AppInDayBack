@@ -1,11 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <title>DevCamp React Starter</title>
+  <title>File Sharing App</title>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <style>
 
@@ -68,6 +70,7 @@
 </style>
 <body>
   <div class="app-wrapper">
+
     <div class="popup-submit-form">
       
       <div class="submit-files">
@@ -84,6 +87,26 @@
     </div>
 
 </div>
+  <div class="upload-wrapper">
+      <h1>Upload new File</h1>
+      <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+      </form>
+    </div>
+
+    <div class="drag-a-file-wrapper">
+      <div class="button-wrapper">
+        <button>Drag files Here</button>
+      </div>
+    </div>
+    <div class="files-uploaded-wrapper">
+      <h3>Files Uploaded</h3>
+      <div class="clickable-links-wrapper">
+
+      </div>
+    </div>
+  </div>
 </body>
 
 <script>
